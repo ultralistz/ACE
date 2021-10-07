@@ -25,7 +25,6 @@
     text-align: initial;
   }
 
-  .home__container,
   .services__container,
   .featured__container,
   .product__container,
@@ -184,7 +183,7 @@
   .home__container,
   .login__container
   {
-    padding: 6rem 0 2rem;
+    padding: 5.5rem 0 2rem;
   }
 
   .app__buttons
@@ -199,10 +198,6 @@
   .nav__img
   {
     max-width: 185px;
-  }
-  .cart__page__content__inner
-  {
-    flex-direction:row;
   }
   .container
   {
@@ -242,7 +237,6 @@
   .home__banner__container
   {
     margin-top: 50px;
-    height: 400px;
   }
 
   .container

@@ -1,7 +1,7 @@
 <header class="header" id="header">
     <nav class="nav container"> 
         <div class="nav__logo">
-            <img class="nav__img" src="<?php echo IMGURL_USER; ?>logo.png">
+            <img class="nav__img" src="<?php echo IMGURL; ?>logo.png">
         </div>
 
         <div class="nav__menu" id="nav-menu">

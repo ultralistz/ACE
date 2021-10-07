@@ -23,7 +23,6 @@ else
 
 //定義區塊
 
-define('IMGURL_USER', SITEURL.'asset/img/');
-define('IMGURL_ADMIN', '../asset/img/');
+define('IMGURL', SITEURL.'asset/img/');
 
 ?>

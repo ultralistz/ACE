@@ -1,0 +1,36 @@
+/*=============== 按鈕 ===============*/
+.button
+{
+  display: inline-block;
+  background-color: var(--earth-tone);
+  color: #1A1A1A;
+  padding: .75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: var(--font-semi-bold);
+  transition: .3s;
+}
+
+.button:hover
+{
+  background-color: var(--earth-tone-hover);
+}
+
+.button__header
+{
+  display: none;
+}
+
+.button__icon
+{
+  font-size: 1.5rem;
+}
+
+.button__nav
+{
+    display: none;
+}
+
+.button__language
+{
+    display: none;
+}

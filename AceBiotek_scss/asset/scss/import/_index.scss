@@ -1,4 +1,4 @@
-//slider 區塊
+/*=============== Banner ===============*/
 .slider__container
 {
     width: 100%;
@@ -85,4 +85,51 @@
 #radio4:checked ~ .first
 {
     margin-left: -60%;
+}
+
+
+/*=============== 首頁 ===============*/
+.main__BG
+{
+  background-image: var(--siteurl);
+  background-size: 30px ;
+}
+
+.home__container
+{
+  row-gap: 3rem;
+  
+}
+
+.home__title
+{
+  font-size: var(--biggest-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-0-75);
+}
+
+.home__title__sub
+{
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-bold);
+  margin-bottom: var(--mb-0-75);
+}
+
+.home__description
+{
+  margin-bottom: var(--mb-2);
+}
+
+.home__banner
+{
+  width: 100%;
+}
+
+.home__banner__container
+{
+  width: 100%;
+  overflow: hidden;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

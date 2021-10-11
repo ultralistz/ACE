@@ -1,3 +1,17 @@
+/*=============== Banner ===============*/
+var banner__count = 1;
+setInterval(function()
+{
+    document.getElementById('radio' + banner__count).checked = true;
+    banner__count++;
+
+    if(banner__count > 3)
+    {
+        banner__count = 1;
+    }
+}, 10000);
+
+
 /*=============== 顯示 MENU ===============*/
 const showMenu = (toggleId, navId) =>
 {

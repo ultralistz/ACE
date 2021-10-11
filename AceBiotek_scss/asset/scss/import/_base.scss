@@ -3,58 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC&display=swap');
 
 
-/*=============== CSS變數 ===============*/
-:root
-{
-  --header-height: 3rem;
-
-
-  /*========== 顏色 ==========*/
-  --white-color: #FFF;
-
-
-  /*========== 字體與字體大小 ==========*/
-  --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 2rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1.125rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-
-
-  /*========== 字體粗細 ==========*/
-  --font-semi-bold: 600;
-  --font-bold: 700;
-
-
-  /*========== Margenes ==========*/
-  --mb-0-5: .5rem;
-  --mb-0-75: .75rem;
-  --mb-1: 1rem;
-  --mb-1-5: 1.5rem;
-  --mb-2: 2rem;
-
-
-  /*========== z index ==========*/
-  --z-tooltip: 10;
-  --z-fixed: 100;
-}
-
-
-@media screen and (min-width: 968px) {
-  :root
-  {
-    --biggest-font-size: 3rem;
-    --h2-font-size: 1.75rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
-}
-
-
 /*=============== 基本 ===============*/
 *, ::before, ::after
 {
@@ -110,17 +58,20 @@ input
 
 
 /*=============== BASE ===============*/
-*,::before,::after{
+*,::before,::after
+{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
 }
 
-html{
+html
+{
     scroll-behavior: smooth;
 }
 
-body{
+body
+{
     margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
@@ -129,19 +80,23 @@ body{
     transition: .5s; // For animation dark mode
 }
 
-h1,h2,h3{
+h1,h2,h3
+{
     font-weight: var(--font-semi-bold);
     color: var(--title-color);
     line-height: 1.5;
 }
 
-ul{
+ul
+{
     list-style: none;
 }
-a{
+a
+{
     text-decoration: none;
 }
-img{
+img
+{
     max-width: 100%;
     height: auto;
 }
@@ -150,7 +105,7 @@ img{
 /*=============== 可重複使用 CSS ===============*/
 .section
 {
-  padding: 4.5rem 0 1rem;
+  padding: 2rem 0 1rem;
 }
 
 .section__title, .section__title-center

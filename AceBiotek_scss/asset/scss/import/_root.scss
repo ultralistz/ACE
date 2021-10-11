@@ -42,7 +42,8 @@
 
   /*========== 字體粗細 ==========*/
   --font-semi-bold: 600;
-  --font-bold: 700;
+  --font-bold: 1000;
+  --font-lite-bold: 500;
 
 
   /*========== Margenes ==========*/
@@ -59,7 +60,8 @@
 }
 
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 968px)
+{
   :root
   {
     --biggest-font-size: 3rem;

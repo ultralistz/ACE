@@ -1,10 +1,8 @@
 <?php
-
 include('config/constants.php');
 
 include('partials/header.php');
 include('partials/menu.php');
-
 ?>
 
 
@@ -36,7 +34,6 @@ include('partials/menu.php');
                         <div class="auto__btn1"></div>
                         <div class="auto__btn2"></div>
                         <div class="auto__btn3"></div>
-                        <div class="auto__btn4"></div>
                     </div>
                 </div>
 
@@ -45,13 +42,78 @@ include('partials/menu.php');
                     <label for="radio2" class="manual__btn"></label>
                     <label for="radio3" class="manual__btn"></label>
                 </div>
+                
             </div>
         </div>
     </div>
 
-    <section class="home section" id="home">
-    </section>
 
+    <section class="home section news__container">
+        <div class="home__container news__container grid">
+            <div class="home__title">新聞資訊</div>
+        </div>
+        
+
+        <!--=============== 新聞內文 ===============-->
+        <?php
+        $news__title__01 = "10/6 外貿協會駐美國舊金山辦事處舉行國慶晚宴: 筑波醫電獲邀代表展示防疫成果";
+        $news__text__01 = "外貿協會駐舊金山辦事處於10月6日晚間假美國舊金山灣區福斯特市皇冠假日酒店，舉行中華民國110年國慶酒會，共有超過500位以上的貴賓。筑波醫電受邀將防疫雙星使用於晚宴廳出入口，並展示國產防疫系統研發成果。";
+        
+        $news__title__02 = "9/15 科技部政風主管蒞臨新竹生醫園區參訪 筑波醫電受邀展示防疫成果";
+        $news__text__02 = "科技部政風主管今15日率同仁參訪新竹生醫園區，筑波醫電榮幸受邀展示兩項AI防疫產品「AI雙眼龍熱像儀、O-Ring淨手機」，並分享近期在國內的防疫成效。";
+
+        $news__title__03 = "9/10 新竹馬偕醫院導入筑波醫電智慧眼科系統：看得健100";
+        $news__text__03 = "看得健100可以與任何檢查儀器串接，自動接收數據並上傳平板，方便醫師在診間即時查看。搭配Uniiform手寫系統，書寫診斷後立即上傳，達到病歷數位化。";
+
+        $news__title__04 = "9/5 台中榮民總醫院與筑波醫電 簽署太赫茲及AI應用合作備忘錄";
+        $news__text__04 = "台中榮總與筑波醫電舉行合作備忘錄簽約典禮。未來雙方將共同進行太赫茲(Terahertz)及AI醫療技術應用開發，推動醫療檢測與人工智慧醫療，應用在疾病預防與提升醫療服務品質。";
+        ?>
+        <div class="news__center">
+            <div class="news__container grid">
+
+                <?php
+                for($news__count=1; $news__count<5; $news__count++)
+                {
+                ?>
+
+                <div class="news__sub__container grid">
+                    <div class="news__content__outter">
+
+                        <div class="news__top">
+                            <div class="news__icon">
+                                <img src="<?php echo IMGURL ?>news.png" alt="">
+                            </div>
+
+                            <div class="news__title">
+                                <p class="news__title__text"><?php echo $news__title__01 ?></p>
+                            </div>
+                        </div>
+
+                        <div class="news__mid">
+                            <div class="news__img__<?php echo $news__count ?>"></div>
+                        </div>
+
+                        <div class="news__bottom">
+                            <div class="news__textBox">
+                                <p class="news__textBox__text"><?php echo $news__text__01 ?></p>
+                            </div>
+                        </div>
+
+                        <div class="news__end">
+                            <input type="button" value="了解更多" class="moreInfo__btn">
+                        </div>
+                    </div>
+                </div>
+
+                <?php
+                }
+                ?>
+
+            </div>
+        </div>
+
+
+    </section>
 </main>
 
 

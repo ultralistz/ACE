@@ -1,7 +1,7 @@
 /*=============== 裝置適應 ===============*/
 
 
-/* 小型裝置 */
+/*=============== 360以下 ===============*/
 @media screen and (max-width: 360px) {
   .section
   {
@@ -25,7 +25,7 @@
 }
 
 
-/* 中型裝置 */
+/*=============== 576以上 ===============*/
 @media screen and (min-width: 576px) {
   .section__title-center
   {
@@ -79,10 +79,17 @@
 
   .news__container
   {
-    max-width: 100%;;
+    width: 100%;
   }
 
   .news__img__1, .news__img__2, .news__img__3, .news__img__4
+  {
+    height: 270px;
+    width: auto;
+
+  }
+
+  .info__img__1, .info__img__2, .info__img__3, .info__img__4
   {
     height: 270px;
     width: auto;
@@ -91,7 +98,9 @@
   .news__top
   {
     height: 76px;
-    width: auto;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-between;
   }
 
   .news__end
@@ -114,17 +123,29 @@
 
   .news__sub__container
   {
-    max-width: 40%;
+    max-width: 48%;
+  }
+
+  .info__sub__container
+  {
+    max-width: 48%;
+    height: 388px;
+    margin-bottom: 20px;
   }
 
   .news__content__outter .news__end
   {
     justify-content: center;
   }
+
+  .news__content__outter .news__top .news__title
+  {
+    width: 100vh;
+  }
 }
 
 
-/* 大型裝置 */
+/*=============== 960以上 ===============*/
 @media screen and (min-width: 960px)
 {
   .button__header
@@ -155,7 +176,10 @@
 
   .footer__container
   {
-    grid-template-columns: repeat(5, 1fr);
+    width: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
   }
 
   .footer__social
@@ -201,31 +225,61 @@
   .home__container
   {
     display: flex;
-    justify-content: start;
+    justify-content: center;
   }
 
-  .news__img__1, .news__img__2, .news__img__3, .news__img__4, .news__textBox, .news__top, .news__content__outter, .news__end
+  .news__img__1, .news__img__2, .news__img__3, .news__img__4, .news__textBox, .news__content__outter, .news__end
   {
     width: 414px;
+    padding: 0px;
+  }
+
+  .news__content__outter .news__top
+  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info__img__1, .info__img__2, .info__img__3, .info__img__4
+  {
+    width: 414px;
+    padding: 0px;
   }
 
   .news__content__outter .news__end
   {
-    justify-content: center;
+    justify-content: end;
+    margin-top: 10px;
   }
 
   .home__title
   {
-    margin-left: -215%;
+    justify-content: center;
   }
 
   .news__sub__container
   {
     max-width: 1100px;
   }
+
+  .info__sub__container
+  {
+    max-width: 414px;
+    height: 414px;
+    margin-bottom: 20px;
+    margin: 13px;
+  }
+
+  .footer__content
+  {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 
+/*=============== 1240以上 ===============*/
 @media screen and (min-width: 1240px)
 {
   body
@@ -259,9 +313,9 @@
     position: initial;
   }
 
-  .home__container,
-  .login__container
+  .home__container
   {
+    justify-content: start;
     padding: -10rem 0 2rem;
   }
 
@@ -369,6 +423,11 @@
     width: 266.25px;
   }
 
+  .info__img__1, .info__img__2, .info__img__3, .info__img__4
+  {
+    width: 266.25px;
+  }
+
   .home__title
   {
     margin-left: 2%;
@@ -376,11 +435,17 @@
 
   .news__content__outter .news__end
   {
-    justify-content: center;
+    justify-content: end;
+  }
+
+  .info__sub__container
+  {
+    width: 266.25px;
   }
 }
 
 
+/*=============== 1600以上 ===============*/
 @media screen and (min-width: 1600px)
 {
   .container
@@ -399,8 +464,18 @@
     width: 370px;
   }
 
+  .info__img__1, .info__img__2, .info__img__3, .info__img__4
+  {
+    width: 370px;
+  }
+
   .home__title
   {
     margin-left: 1.5%;
+  }
+
+  .info__sub__container
+  {
+    width: 370px;
   }
 }

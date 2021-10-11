@@ -5,8 +5,9 @@ include('partials/header.php');
 include('partials/menu.php');
 ?>
 
-
+<!--=============== 主要區塊 ===============-->
 <main class="main main__bg">
+    <!--=============== BANNER ===============-->
     <div class="home__banner__container">
         <div class="slider__container">
         
@@ -177,12 +178,7 @@ include('partials/menu.php');
         </div>
     </div>
 
-
 </main>
-
-
-
-
 
 
 <?php include('partials/footer.php'); ?>

@@ -23,12 +23,10 @@
 /*=============== NAV ===============*/
 .nav
 {
-    height: calc(var(--header-height) + 0.5rem);
+    height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 1240px)
@@ -224,9 +222,9 @@ ul.drop-down-menu ul li:hover > ul
 
 .menu__center
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu__bold

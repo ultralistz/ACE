@@ -1,31 +1,37 @@
 /*=============== 裝置適應 ===============*/
 
 
-/* 小型裝置 */
+/*=============== 360以下 ===============*/
 @media screen and (max-width: 360px) {
   .section
   {
     padding: 3.5rem 0 1rem;
   }
+
   .services__img
   {
     width: 100px;
   }
+
   .app__buttons
   {
     grid-template-columns: max-content;
   }
+
+  .news__content__outter .news__end
+  {
+    justify-content: center;
+  }
 }
 
 
-/* 中型裝置 */
+/*=============== 576以上 ===============*/
 @media screen and (min-width: 576px) {
   .section__title-center
   {
     text-align: initial;
   }
 
-  .home__container,
   .services__container,
   .featured__container,
   .product__container,
@@ -70,13 +76,76 @@
   {
     width: 12px;
   }
+
+  .news__container
+  {
+    width: 100%;
+  }
+
+  .news__img__1, .news__img__2, .news__img__3, .news__img__4
+  {
+    height: 270px;
+    width: auto;
+
+  }
+
+  .info__img__1, .info__img__2, .info__img__3, .info__img__4
+  {
+    height: 270px;
+    width: auto;
+  }
+
+  .news__top
+  {
+    height: 76px;
+    width: 100%;
+    padding: 0px;
+    justify-content: space-between;
+  }
+
+  .news__end
+  {
+    height: 52px;
+    width: auto;
+  }
+
+  .news__textBox
+  {
+    height: 112px;
+    width: auto;
+  }
+
+  .news__content__outter
+  {
+    height: 514px;
+    margin: 8px;
+  }
+
+  .news__sub__container
+  {
+    max-width: 48%;
+  }
+
+  .info__sub__container
+  {
+    max-width: 48%;
+    height: 388px;
+    margin-bottom: 20px;
+  }
+
+  .news__content__outter .news__end
+  {
+    justify-content: center;
+  }
+
+  .news__content__outter .news__top .news__title
+  {
+    width: 100vh;
+  }
 }
 
 
-
-
-
-/* 大型裝置 */
+/*=============== 960以上 ===============*/
 @media screen and (min-width: 960px)
 {
   .button__header
@@ -107,7 +176,10 @@
 
   .footer__container
   {
-    grid-template-columns: repeat(5, 1fr);
+    width: 400px;
+    grid-template-columns: repeat(4, 1fr);
+    display: flex;
+    justify-content: center;
   }
 
   .footer__social
@@ -133,21 +205,81 @@
     flex-direction:row;
   }
 
-    .container
-    {
-        width: 100%;
-    max-width: 900px;
-    }
+  .container
+  {
+    width: 100%;
+    max-width: 900px;;
+  }
 
-    .header
-    {
-        display: flex;
-        justify-content: center;
-    }
+  .news__container
+  {
+    max-width: 100%;;
+  }
 
+  .header
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .home__container
+  {
+    display: flex;
+    justify-content: center;
+  }
+
+  .news__img__1, .news__img__2, .news__img__3, .news__img__4, .news__textBox, .news__content__outter, .news__end
+  {
+    width: 414px;
+    padding: 0px;
+  }
+
+  .news__content__outter .news__top
+  {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .info__img__1, .info__img__2, .info__img__3, .info__img__4
+  {
+    width: 414px;
+    padding: 0px;
+  }
+
+  .news__content__outter .news__end
+  {
+    justify-content: end;
+    margin-top: 10px;
+  }
+
+  .home__title
+  {
+    justify-content: center;
+  }
+
+  .news__sub__container
+  {
+    max-width: 1100px;
+  }
+
+  .info__sub__container
+  {
+    max-width: 414px;
+    height: 414px;
+    margin-bottom: 20px;
+    margin: 13px;
+  }
+
+  .footer__content
+  {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
 }
 
 
+/*=============== 1240以上 ===============*/
 @media screen and (min-width: 1240px)
 {
   body
@@ -157,7 +289,7 @@
 
   .section
   {
-    padding: 6rem 0 2rem;
+    padding: 2rem 0 2rem;
   }
 
   .nav
@@ -181,10 +313,10 @@
     position: initial;
   }
 
-  .home__container,
-  .login__container
+  .home__container
   {
-    padding: 6rem 0 2rem;
+    justify-content: start;
+    padding: -10rem 0 2rem;
   }
 
   .app__buttons
@@ -200,11 +332,12 @@
   {
     max-width: 185px;
   }
-  .cart__page__content__inner
-  {
-    flex-direction:row;
-  }
   .container
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .news__container
   {
     margin-left: auto;
     margin-right: auto;
@@ -242,10 +375,14 @@
   .home__banner__container
   {
     margin-top: 50px;
-    height: 400px;
   }
 
   .container
+  {
+      width: 100%;
+      max-width: 1185px;
+  }
+  .news__container
   {
       width: 100%;
       max-width: 1185px;
@@ -280,14 +417,84 @@
     justify-content: center;
     align-items: center;
   }
+
+  .news__img__1, .news__img__2, .news__img__3, .news__img__4, .news__textBox, .news__top, .news__content__outter, .news__end
+  {
+    width: 266.25px;
+  }
+
+  .info__img__1, .info__img__2, .info__img__3, .info__img__4
+  {
+    width: 266.25px;
+  }
+
+  .home__title
+  {
+    margin-left: 2%;
+  }
+
+  .news__content__outter .news__end
+  {
+    justify-content: end;
+  }
+
+  .info__sub__container
+  {
+    width: 266.25px;
+  }
+    ul.drop-down-menu
+  {
+      border-style: none;
+      font-family: 'Open Sans', Arial, sans-serif;
+      font-size: 13px;
+      display: block;
+      flex-direction: row;
+  }
+
+  .header
+{
+    width: 100%;
+    background-color: var(--body-color);
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    transition: .5s;
+    position: fixed;
+}
 }
 
 
+/*=============== 1600以上 ===============*/
 @media screen and (min-width: 1600px)
 {
-    .container
-    {
-        width: 100%;
-    max-width: 1600px;
-    }
+  .container
+  {
+      width: 100%;
+  max-width: 1600px;
+  }
+  .news__container
+  {
+      width: 100%;
+  max-width: 1600px;
+  }
+
+  .news__img__1, .news__img__2, .news__img__3, .news__img__4, .news__textBox, .news__top, .news__content__outter, .news__end
+  {
+    width: 370px;
+  }
+
+  .info__img__1, .info__img__2, .info__img__3, .info__img__4
+  {
+    width: 370px;
+  }
+
+  .home__title
+  {
+    margin-left: 1.5%;
+  }
+
+  .info__sub__container
+  {
+    width: 370px;
+  }
 }

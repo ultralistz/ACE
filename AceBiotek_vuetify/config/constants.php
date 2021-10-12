@@ -7,14 +7,14 @@ session_start();
 //定義區塊
 if($_SERVER['HTTP_HOST']=="localhost")
 {
-    define('SITEURL', 'http://localhost/ACE/AceBiotek/');
+    define('SITEURL', 'http://localhost/ACE/AceBiotek_vuetify/');
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');
 }
 else
 {
-    define('SITEURL', 'https://huabambi.com/ACE/AceBiotek/');
+    define('SITEURL', 'https://huabambi.com/ACE/AceBiotek_vuetify/');
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'ultralistz');
     define('DB_PASSWORD', 'ult014077');
@@ -23,7 +23,6 @@ else
 
 //定義區塊
 
-define('IMGURL_USER', SITEURL.'asset/img/');
-define('IMGURL_ADMIN', '../asset/img/');
+define('IMGURL', SITEURL.'asset/img/');
 
 ?>

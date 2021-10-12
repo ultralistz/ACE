@@ -34,11 +34,6 @@
                                 聯絡信箱
                                 <br>
                                 service@acebiotek.com
-                                <br><br>
-                                社群媒體
-                                <br>
-                                <a href="https://www.facebook.com/Acebiotek" class="footer__social-link"><i class='bx bxl-facebook-circle '></i></a>
-
                             </v-card-text>
 
                             <v-divider></v-divider>
@@ -53,7 +48,7 @@
 
                 <!--=============== 回到最上方 ===============-->
                 <a href="#" class="scrollup" id="scroll-up">
-                    <i class='bx bx-up-arrow-alt scrollup__icon'></i>
+                    <i class='bx2 bx-up-arrow-alt scrollup__icon'></i>
                 </a>
 
             </v-app>
